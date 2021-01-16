@@ -1,14 +1,14 @@
 # learning-reactive-quarkus project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Project was developed during study of reactive quarkus, being composed by a simple CRUD of orphanages which is made available via swagger-ui. This project was deployed to Heroku and is available at the link https://quarkus-reactive-orphanage.herokuapp.com/
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+If you wanted to see a more complete project (just a CRUD, but using flyway, panache, healthCheck, among others https://github.com/cpbosi/orphanages-quarkus).
 
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 ```shell script
-./mvnw compile quarkus:dev
+./mvnw compile quarkus:dev -Dquarkus.profile=dev
 ```
 
 ## Packaging and running the application
@@ -40,5 +40,3 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 ```
 
 You can then execute your native executable with: `./target/learning-reactive-quarkus-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
